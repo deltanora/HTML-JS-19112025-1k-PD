@@ -3,22 +3,28 @@ const inputWeight = document.getElementById('svars');
 const inputHeight = document.getElementById('augums');
 const outPut = document.getElementById('out');
 
-addEventListener.kg('click', function(){
-    BMI = inputWeight / inputHeight;
-    console.log(BMI)
+document.getElementById('kg').addEventListener('click', function(){
+ outPut.innerHTML = inputWeight.value / inputHeight.value ;
 
-})
+}
 
-BMI = 0;
+)
+
+BMI = 0
 if (BMI < 18,5){
     console.log("Nepietiekama ķermeņa masa");
 }else{
-    (BMI = 18,5 – 24,99)
+    (BMI <=24,99);
     console.log("Normāla ķermeņa masa")
 }else{
-    (BMI =  25 – 29,99 )
+    (BMI <=29,99 );
     console.log("Lieka ķermeņa masa")
 }else{
     (BMI > 30)
     console.log("Aptaukošanās")
 }
+
+console.log(BMI);
+
+li = document.getElementById('li');
+li.innerHTML = `Vēsture`;
